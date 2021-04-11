@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"><!-- rota no css-->
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <h2>Usando formulario post</h2>
+    <form action="/" method="POST">
+        Nome:<input name="nome" type="text">
+        <br>
+        Sobrenome:<input name="sobrenome" type="text">
+        <button type ="submit">Send data</button>
+    </form>
+
+    <h2>Usando jquery post</h2>
+    <form method="POST">
+        Nome:<input name="nome" type="text" id="nome">
+        <br>
+        Sobrenome:<input name="sobrenome" type="text" id="sobrenome">
+        <button id="jquery">Send data</button>
+    </form>
+
+</body>
+
+<script src="./app.js">
+    //existem 2 modos de se enviar arquivos para o servidor
+    //1 - formulario post ou enviar parametros na utl
+    //2 - formulario com jquery (ao menos no meu codigo foi encessario definir POST no formulario)
+    //É ncessario importar o jquery no html
+</script>
+</html>
